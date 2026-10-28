@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5월 25일 호우 대응 | 부처별 보도자료</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif;color:#162c40;background:#f3f6f8;line-height:1.65}*{box-sizing:border-box}body{margin:0}header{background:#142f45;color:white;padding:54px max(24px,calc((100vw - 1140px)/2)) 46px}.eyebrow{color:#91d9d8;font-size:13px;font-weight:700;letter-spacing:.12em}h1{font-size:clamp(30px,4vw,46px);line-height:1.25;margin:14px 0}header p{color:#d4e0e8;margin:0;max-width:700px}.badge{display:inline-block;margin-top:24px;border:1px solid #729099;border-radius:30px;padding:4px 12px;font-size:13px}main{max-width:1188px;margin:auto;padding:32px 24px 60px}.searchbox{background:white;padding:24px;border:1px solid #dbe3e9;border-radius:16px}label{display:block;font-size:14px;font-weight:700;margin-bottom:8px}.controls{display:flex;gap:10px}input,button{font:inherit;border-radius:9px;padding:12px 16px}input{width:100%;min-width:0;border:1px solid #9bacba}button{border:0;background:#126b6d;color:white;cursor:pointer;white-space:nowrap}button.secondary{background:#e9eef2;color:#243f53}button:hover{filter:brightness(.93)}:focus-visible{outline:3px solid #e4a841;outline-offset:3px}.hint{font-size:13px;color:#597082;margin:10px 0 0}.sectionhead{display:flex;align-items:center;justify-content:space-between;margin:28px 0 15px}h2{font-size:21px;margin:0}.count{color:#126b6d;font-weight:700}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid #dbe3e9;border-radius:14px;padding:24px;border-top:4px solid #168183}.card .agency{font-size:13px;color:#126b6d;font-weight:750}.card h3{font-size:20px;line-height:1.5;margin:14px 0}.card p{font-size:15px;color:#40596b}.card details{border-top:1px solid #e5ebef;padding-top:14px;margin-top:22px}.card summary{cursor:pointer;color:#126b6d;font-weight:650;font-size:14px}.full{white-space:pre-wrap;font-size:14px;overflow-wrap:anywhere}.empty{grid-column:1/-1;text-align:center;padding:45px;background:#fff;border-radius:12px;color:#597082}.resource{margin-top:32px;background:#e4eef0;border-radius:16px;padding:24px;display:grid;grid-template-columns:280px 1fr;gap:24px;align-items:center}.resource img{display:block;width:100%;height:190px;object-fit:cover;border-radius:10px}.resource p{margin:10px 0;font-size:14px}a{color:#07686c}footer{margin-top:32px;color:#607486;font-size:12px}#image-error{color:#8d341b} @media(max-width:850px){.cards{grid-template-columns:1fr}.resource{grid-template-columns:1fr}.resource img{height:220px}}@media(max-width:500px){.controls{flex-wrap:wrap}.controls input{flex-basis:100%}header{padding:34px 24px}.searchbox{padding:18px}}
+</style>
+</head>
+<body>
+<!-- v1.0 요구: JSON 카드, 부처/본문 검색, 건수, 외부 이미지. 검증: 초기 3 → 1,820 검색 2 → 없는검색어 0 → 초기화 3. -->
+<header><div class="eyebrow">RAIN RESPONSE · PRESS ROOM</div><h1>5월 25일 호우 대응<br>부처별 보도자료</h1><p>행정안전부 · 기상청 · 경찰청의 발표 내용을 한곳에서 확인하고,<br>부처명이나 본문 키워드로 필요한 자료를 찾아보세요.</p><span class="badge">가상 시나리오 · 2026.05.25</span></header>
+<main>
+<section class="searchbox" aria-label="보도자료 검색"><form id="search-form"><label for="keyword">부처명 또는 본문 키워드</label><div class="controls"><input id="keyword" type="search" placeholder="예: 기상청, 1,820, 23억원" autocomplete="off"><button type="submit">검색</button><button type="button" class="secondary" id="reset">초기화</button></div></form><p class="hint">부처 또는 본문에 입력한 문구가 포함된 자료를 표시합니다. 빈 검색어는 전체 자료를 표시합니다.</p></section>
+<div class="sectionhead"><h2>보도자료 모아보기</h2><span class="count" id="count" role="status" aria-live="polite">자료 불러오는 중…</span></div>
+<section class="cards" id="cards" aria-label="검색 결과"></section>
+<section class="resource" aria-labelledby="resource-title"><div><img id="rain-image" src="https://upload.wikimedia.org/wikipedia/commons/8/83/Window_rains.jpg" alt="창문 너머로 보이는 빗방울 — 호우 관련 참고 이미지"><p id="image-error" hidden>외부 이미지를 불러오지 못했습니다. 아래 원문 링크에서 확인할 수 있습니다.</p></div><div><div class="eyebrow" style="color:#126b6d">EXTERNAL RESOURCE</div><h2 id="resource-title">비와 호우, 참고 이미지</h2><p>Wikimedia Commons에서 제공하는 외부 이미지를 표시합니다. 해당 보도자료의 실제 현장 사진은 아닙니다.</p><p><a href="https://commons.wikimedia.org/wiki/File:Window_rains.jpg" target="_blank" rel="noopener noreferrer">Window rains.jpg · Anitha.K</a><br><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> · 원본 변경 없음, 화면 크기에 맞춰 표시</p></div></section>
+<footer>자료: 제공된 보도자료데이터.json · 본 페이지는 가상 과제용이며 정부 공식 서비스가 아닙니다.<br>부처별 발표 수치는 원문 그대로 표시하며, 서로 다른 수치를 임의로 통합하거나 보정하지 않습니다.</footer>
+</main>
+<script>
+'use strict';
+let articles=[];
+const input=document.querySelector('#keyword'),cards=document.querySelector('#cards'),count=document.querySelector('#count');
+function element(tag,text,className){const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;}
+function summary(body){return body.split(/\n\s*\n/).filter(p=>p.trim()&&!p.trim().startsWith('#')&&p.trim()!=='---')[0]?.replace(/\*\*/g,'')||body.slice(0,180);}
+function render(){const key=input.value.trim().toLocaleLowerCase();const found=articles.filter(a=>(a['부처']+'\n'+a['본문']).toLocaleLowerCase().includes(key));cards.replaceChildren();count.textContent=`결과 ${found.length}건`;for(const a of found){const card=element('article',undefined,'card');card.append(element('div',`${a['번호'].toString().padStart(2,'0')} / ${a['부처']}`,'agency'),element('h3',a['제목']),element('p',summary(a['본문'])));const details=element('details');details.append(element('summary','본문 전체 보기'),element('p',a['본문'],'full'));card.append(details);cards.append(card);}if(!found.length)cards.append(element('p','검색 결과가 없습니다. 다른 키워드를 입력하거나 초기화해 주세요.','empty'));}
+document.querySelector('#search-form').addEventListener('submit',e=>{e.preventDefault();render();});
+input.addEventListener('input',render);
+document.querySelector('#reset').addEventListener('click',()=>{input.value='';render();input.focus();});
+document.querySelector('#rain-image').addEventListener('error',()=>{document.querySelector('#image-error').hidden=false;});
+fetch('./보도자료데이터.json').then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}).then(data=>{if(!Array.isArray(data)||data.some(a=>!['번호','부처','제목','본문'].every(k=>k in a)))throw new Error('잘못된 자료 형식');articles=data;render();}).catch(()=>{count.textContent='자료 로딩 실패';cards.replaceChildren(element('p','보도자료를 불러오지 못했습니다. 잠시 후 새로고침해 주세요.','empty'));});
+</script>
+</body></html>
